@@ -1,0 +1,15 @@
+.portfolio-nav {
+  @extend %list;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.portfolio-nav__item {
+  margin-left: 8px;
+  @extend %link;
+
+  &:first-child {
+    margin-left: 0;
+  }
+}
