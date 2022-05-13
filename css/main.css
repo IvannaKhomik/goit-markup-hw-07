@@ -320,7 +320,7 @@ ul {
           align-items: center;
 }
 
-.modal-close, .portfolio-nav__btn, .footer-btn, .main-btn {
+.modal-close, .portfolio-nav__btn, .btn {
   text-decoration: none;
   cursor: pointer;
 }
@@ -359,6 +359,9 @@ ul {
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
+}
+.container--hero {
+  width: 691px;
 }
 
 .section {
@@ -454,56 +457,49 @@ ul {
   fill: #fff;
 }
 
-.main-btn {
-  background-color: #2196f3;
-  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border: 1px solid transparent;
-  border-radius: 4px;
-  padding: 10px 32px;
-  display: block;
-  margin: 0 auto;
-  min-width: 200px;
-  font-family: inherit;
-  font-weight: 700;
-  line-height: 1.88;
-  letter-spacing: 0.06em;
-  text-align: center;
-  color: #ffffff;
-  -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.main-btn:hover, .main-btn:focus {
-  background-color: #188ce8;
-}
-
-.footer-btn {
+.btn {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-left: 29px;
-  width: 200px;
-  height: 50px;
-  font-family: inherit;
-  color: #ffffff;
+  margin: 0 auto;
+  min-width: 200px;
   font-weight: 700;
   line-height: 1.88;
   letter-spacing: 0.06em;
+  font-family: inherit;
+  font-style: inherit;
+  color: #ffffff;
   background-color: #2196f3;
   border: 1px solid transparent;
   border-radius: 4px;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.footer-btn:hover, .footer-btn:focus {
+.btn:hover, .btn:focus {
   background-color: #188ce8;
 }
-.footer-btn__icon {
+.btn__icon {
   margin-left: 10px;
   fill: #ffffff;
+}
+
+.btn--main {
+  padding: 10px 32px;
+}
+
+.btn--send {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  padding: 10px 29px;
 }
 
 .portfolio-nav__btn {
@@ -884,9 +880,6 @@ ul {
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-}
-.hero .container {
-  width: 691px;
 }
 
 .hero__title {
