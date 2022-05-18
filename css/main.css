@@ -150,7 +150,6 @@ select,
 textarea {
   font-family: inherit;
   /* 1 */
-  font-size: 100%;
   /* 1 */
   line-height: 1.15;
   /* 1 */
@@ -308,7 +307,7 @@ ul {
   margin: -1px;
 }
 
-.portfolio-card__overlay, .clients__link, .works__subtitle, .benefits__icon-wrap, .checkbox, .modal-close, .socials__link {
+.portfolio-card__overlay, .clients__link, .works__subtitle, .benefits__icon-wrap, .checkbox, .modal-close, .btn, .socials__link {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -320,7 +319,7 @@ ul {
           align-items: center;
 }
 
-.modal-close, .portfolio-nav__btn, .btn {
+.modal-close, .btn {
   text-decoration: none;
   cursor: pointer;
 }
@@ -458,72 +457,30 @@ ul {
 }
 
 .btn {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   margin: 0 auto;
+  font-family: inherit;
+  font-style: inherit;
+  border: 1px solid transparent;
+  border-radius: 4px;
+}
+.btn--main {
   min-width: 200px;
   font-weight: 700;
   line-height: 1.88;
   letter-spacing: 0.06em;
-  font-family: inherit;
-  font-style: inherit;
   color: #ffffff;
   background-color: #2196f3;
-  border: 1px solid transparent;
-  border-radius: 4px;
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.btn:hover, .btn:focus {
+.btn--main:hover, .btn--main:focus {
   background-color: #188ce8;
 }
 .btn__icon {
   margin-left: 10px;
   fill: #ffffff;
-}
-
-.btn--main {
-  padding: 10px 32px;
-}
-
-.btn--send {
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  padding: 10px 29px;
-}
-
-.portfolio-nav__btn {
-  padding: 6px 22px;
-  font-weight: 500;
-  line-height: 1.63;
-  letter-spacing: 0.03em;
-  font-family: inherit;
-  font-style: inherit;
-  text-align: center;
-  border: 1px solid transparent;
-  border-radius: 4px;
-  background-color: #f5f4fa;
-  color: #212121;
-  -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.portfolio-nav__btn--accent, .portfolio-nav__btn:hover, .portfolio-nav__btn:focus {
-  background-color: #2196f3;
-  color: #ffffff;
-  -webkit-box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-          box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .modal-close {
@@ -759,6 +716,10 @@ ul {
   border-color: #2196f3;
 }
 
+.modal-form__btn {
+  padding: 10px 32px;
+}
+
 .header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -891,6 +852,10 @@ ul {
   text-align: center;
   text-transform: uppercase;
   color: #ffffff;
+}
+
+.hero__btn {
+  padding: 10px 32px;
 }
 
 .benefits__list {
@@ -1066,6 +1031,25 @@ ul {
 }
 .portfolio-nav__item:first-child {
   margin-left: 0;
+}
+
+.portfolio-nav__btn {
+  padding: 6px 22px;
+  font-weight: 500;
+  line-height: 1.63;
+  letter-spacing: 0.03em;
+  background-color: #f5f4fa;
+  color: #212121;
+  -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.portfolio-nav__btn--accent, .portfolio-nav__btn:hover, .portfolio-nav__btn:focus {
+  background-color: #2196f3;
+  color: #ffffff;
+  -webkit-box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+          box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .portfolio-list {
@@ -1277,4 +1261,8 @@ ul {
   background-color: transparent;
   color: rgba(255, 255, 255, 0.6);
   border-color: #2196f3;
+}
+
+.footer-form__btn {
+  padding: 10px 28px 10px 29px;
 }/*# sourceMappingURL=main.css.map */
